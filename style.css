@@ -1,0 +1,400 @@
+body {
+   font-family: 'Montserrat', sans-serif; 
+   background-color: #000;
+   margin: 0;
+   color: #fff;
+   overflow: hidden;
+}
+
+/* header design start from here */
+.header {
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    color: #000;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    flex: 1;
+}
+
+.search-bar-icon {
+    flex: 2;
+}
+
+
+.logo {
+    display: flex;
+    height: 4.5rem;
+    width: 4.5rem;
+    margin-left: 3rem;
+    align-items: center;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    /* text-decoration: none; */
+}
+
+.tooltip-text {
+    visibility: hidden;
+    width: 75px;
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 5px;
+    position: absolute;
+    top: 120%;
+
+    left: 10%;
+    transform: translateX(-40%);
+
+    opacity: 0;
+    transition: opacity 0.3s;
+    white-space: nowrap;
+}
+
+.tooltip:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+    font-size: small;
+    font-weight: normal;
+
+}
+
+.logo a i {
+    font-size: 2rem;
+}
+
+/* Home icon style */
+
+.home-icon i {
+    font-size: 1.24rem;
+}
+
+.home-icon {
+    background-color: #232323;
+    color: #fff;
+    height: 3rem;
+    width: 3rem;
+    border: none;
+    border-radius: 100%;
+    margin-right: 0.5rem;
+}
+
+.search-bar-icon {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar {
+    height: 3rem;
+    width: 470px;
+    align-items: center;
+    position: relative;
+    margin-top: 8px;
+    display: flex;
+}
+
+.search-bar input{
+    height: 3rem;
+    width: 100%;
+    color: white;
+    background-color: #232323;
+    border: none;
+    border-radius: 100px;
+}
+
+.search-bar i {
+    position: absolute;
+    color: white;
+    opacity: 0.6;
+    font-size: 2rem;
+    left: 15px;
+}
+
+/* input::-ms-clear, input::-webkit-search-cancel-button {
+    display: none;
+} */
+
+
+.search-input::placeholder {
+    font-weight: 600;
+    text-align: center;
+}
+
+
+
+.header-btns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 3rem;
+}
+
+.notification i {
+    font-size: 1rem;
+}
+
+.notification {
+    height: 2rem;
+    width: 2rem;
+    border-radius: 100%;
+    border: none;
+    background-color: #000;
+    color: white;
+}
+
+.profile {
+    height: 2rem;
+    width: 2rem;
+    border-radius: 100%;
+    background-color: #000;
+    color: white;
+    border: none;
+}
+
+.profile i {
+    font-size: 1rem;
+}
+
+.header-btns button{
+    margin-left: 0.75rem;
+}
+
+/* Header completes here  */
+.main {
+    display: flex;
+    height: 100vh;
+    padding: 0.5rem;
+}
+
+
+/* Sidebar design start from here */
+.sidebar {
+    background-color: #000;
+    width: 420px;
+    border-radius: 1rem;
+    margin-right: 0.5rem;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav {
+    background-color: #121212;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100px;
+    padding: 0.5rem 0.75rem;
+}
+
+.nav-option {
+    line-height: 2.5rem;
+    opacity: 0.7;
+    padding: 0.5rem 0.75rem;
+}
+
+.nav-option:hover {
+    opacity: 1;
+}
+
+.nav-option i {
+    font-size: 1.25rem;
+}
+
+.nav-option a {
+    font-size: 1rem;
+    margin-left: 1rem;
+}
+
+.library {
+    background-color: #121212;
+    border-radius: 1rem;
+    height: 100%;
+    margin-top: 0.5rem;
+    padding: 0.5rem 0.75rem;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lib-options img {
+    height: 1.25rem;
+    width: 1.25rem;
+}
+
+.icons{
+    display: flex;
+    font-size: 1rem;
+}
+
+.icons i {
+    margin-right: 1rem;
+    opacity: 0.7;
+}
+
+.icons i:hover {
+    opacity: 1;
+}
+
+.box {
+    height: 10rem;
+    background-color: #232323;
+    border-radius: 0.75rem;
+    margin: 0.75rem 0 1.75rem 0;
+    padding: 0.7rem 1rem;
+}
+
+.box-para1 {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.box-para2 {
+    font-size: 0.8rem;
+    opacity: 0.75;
+}
+
+.badge {
+    background-color: #fff;
+    border: none;
+    border-radius: 100px;
+    font-weight: 600;
+    width: fit-content;
+    padding: 0.25rem 1rem;
+    margin: 0.5rem;
+    height: 2rem;
+}
+
+/* Side Bar Design Finish Here  */
+
+
+/* Main Content Start From Here */
+
+
+.main-content {
+    /* Color shoud be #121212 */
+    background-color: #121212;
+    flex: 1;
+    border-radius: 1rem;
+    overflow: auto;
+    padding: 0 1.5rem 0 1.5rem;
+}
+
+
+.sticky-nav {
+    position: sticky;
+    top: 0;
+    background-color: #121212;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0 0 1rem;
+    z-index: 10;
+}
+
+
+.sticky-nav-options {
+    display: flex;
+    align-items: center;
+}
+
+.nav-items {
+    margin-right: 0.1rem;
+}
+
+.dark-badge {
+    background-color: #232323;
+    color: white;
+}
+
+@media(max-width:1000px) {
+    .hide{
+        display: none;
+    }
+}
+
+/* Designing card's here */
+
+.card {
+    background-color: #232323;
+    width: 200px;
+    height: 300px;
+    border-radius: 0.7rem;
+    padding: 1rem;
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+}
+
+.card-img {
+    width: 100%;
+    border-radius: 0.7rem;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-title {
+    font-weight: 600;
+}
+
+.card-info {
+    font-size: 0.85rem;
+    opacity: 0.7;
+}
+
+
+/* footer style start from here */
+
+.footer {
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.line {
+    width: 90%;
+    height: 30%;
+    border-top: 1px solid;
+    opacity: 0.5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.music-player {
+    background-color: #121212;
+    position: fixed;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+}
